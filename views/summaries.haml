@@ -1,0 +1,9 @@
+- unless pages.empty?
+  - pages.each do |page|
+    %section.judul
+      %h2
+        %a(href="#{page.abspath}")= page.heading
+    - if page.summary.nil? || page.summary.empty?
+      ~ page.body(self)
+    - else
+      ~ page.summary

@@ -1,0 +1,37 @@
+!!!
+%html{:lang => "id"}
+  %head
+    %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
+    - if @description
+      %meta{ "name" => "description", "content" => @description }
+    - if @keywords
+      %meta{ "name" => "keywords", "content" => @keywords }
+    %title= @title
+    %link{ :href => "/css/master.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    - local_stylesheet_link_tag('local')
+    %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
+  %body{ :class => @body_class }
+    %header#header
+      %div
+        %h1{:style => "font-size:130%;margin-left:10px"}
+          %a{:href => "/", :title => "Blog & Note Of Nurul Imam"}Blog & Note of "Nurul Imam"
+        %nav#icon
+          %a#feed.icons{:href => "/articles.xml", :rel => "nofollow", :target => "_blank", :title => "Subscribe Via RSS"} Feed Blog & Note Of Nurul Imam
+          %a#twitter.icons{:href => "http://twitter.com/nurulimamnotes", :rel => "nofollow", :target => "_blank", :title => "Follow me on Twitter"} @nurulimamnotes on twitter
+          %a#fb.icons{:href => "http://www.facebook.com/IamStevenTylers", :rel => "nofollow", :target => "_blank", :title => "Add me on Facebook"} Nurul Imam on Facebook
+        %nav#menu
+          %a{:href => "/", :title => "Archive Blog Of Nurul Imam"} Home
+          %a{:href => "/category/blogging-resource", :title => "Archive Blog Of Nurul Imam"} Blog
+          %a{:href => "/category/catatan", :title => "Archive Note Of Nurul Imam"} Notes
+          %a{:href => "/archive", :title => "Archive Blog & Note Of Nurul Imam"} Archive
+          %a{:href => "/about", :title => "About Nurul Imam"} About
+          %a{:href => "/contact", :title => "Send Me a Message"} Contact
+          %a{:href => "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=NSB6FY4YE6QTC&lc=ID&item_name=Blog%20%26%20Note%20Of%20Nurul%20Imam¤cy_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted", :rel => "nofollow", :target => "_blank", :title => "Please buy me a cofee"} Donate
+    = yield
+    %section{:style => "margin-top:70px;clear:both"}
+    %footer
+      %p{:style => "float:left;margin-left:3%"}
+        Copyright © 2011 Blog & Note of "Nurul Imam"
+      %p{:style => "float:right;margin-right:3%"}
+        Simple Notes Theme Designed by : Nurul Imam
+      = haml :analytics, :layout => false

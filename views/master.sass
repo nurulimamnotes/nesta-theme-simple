@@ -1,0 +1,373 @@
+$font: 'Palatino Linotype',Palatino,'Zapf Calligraphic','Book Antiqua',Georgia,serif
+
+/** CSS Reset Nurul Imam **/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  border: 0
+  outline: 0
+  vertical-align: baseline
+  background: transparent
+  margin: 0
+  padding: 0
+  
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary
+  display: block
+
+a
+  border: 0
+  vertical-align: baseline
+  text-decoration: none
+  background: transparent
+  margin: 0
+  padding: 0
+  color: #000
+  &:hover
+    color: #000
+  &:visited
+    color: #000
+    
+blockquote, q
+  quotes:none
+  
+blockquote:before, blockquote:after, q:before, q:after
+  content:none
+  
+ins
+  text-decoration: none
+  
+del
+  text-decoration: none
+  
+abbr[title], dfn[title]
+  border-bottom: 1px dotted #000
+  cursor: help
+  
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 1em 0
+  padding: 0
+  
+input, select
+  vertical-align: middle
+  
+::-moz-selection
+  background-color: #a8d1ff
+  color: #000
+  
+nav ul
+  list-style: none
+  
+h1, h2, h3, h4, h5, h6
+  color: #000
+
+h1
+  font-size: 1.7em
+
+h2
+  font-size: 1.7em
+
+h3
+  font-size: 1.6em
+
+h4
+  font-size: 1.5em
+  
+h5
+  font-size: 1.4em
+
+h6
+  font-size: 1.3em
+
+ol, ol li, p, pre, ul, ul li
+  margin-bottom: 1em
+
+ul, ol
+  padding-left: 30px
+  list-style: none
+  li
+    background-image: url(../images/panah.gif)
+    background-repeat: no-repeat
+    background-position: left
+    padding-left: 10px
+    margin-bottom: 0.75em
+    font-size: 1.2em
+    color: #888888
+
+code
+  font-size: 13px
+  color: green
+
+pre
+  font-size: 13px
+  background: #000
+  padding: 1em
+  margin: 1.5em 0
+  white-space: pre-wrap
+  white-space: -moz-pre-wrap
+  white-space: -pre-wrap
+  white-space: -o-pre-wrap
+  word-wrap: break-word
+  
+strong
+  font-weight: bold
+  color: #333
+
+em
+  font-style: italic
+  
+body
+  width: 100%
+  height: 100%
+  overflow: auto
+  clear: both
+  margin: 0
+  padding: 0
+  font-family: $font
+  letter-spacing: 0.03em
+  background: white url(/simple/images/body.gif)
+
+header
+  background: #333
+  opacity: 0.7
+  div
+    width: 100%
+    margin: 0 auto
+    line-height: 26px
+    &:after
+      content: "Nurul Imam Notes"
+      display: block
+      height: 0
+      visibility: hidden
+      clear: both
+    h1
+      float: left
+      display: inline-block
+      position: relative
+      text-shadow: 1px 1px 1px #a8d1ff
+      a
+        color: #CAE3F2
+        display: inline-block
+        padding: 9px 10px 10px 20px
+        margin-left: -20px
+        position: relative
+        &:hover, &:focus
+          background: #000
+          padding-left: 30px
+          -webkit-transition-duration: 0.98s
+          -moz-transition-duration: 0.98s
+          -o-transition-duration: 0.98s
+          transition-duration: 0.98s
+        &:hover:after, &:focus:after
+          content: ""
+          display: block
+          border-top: solid 23px transparent
+          border-right: solid 23px transparent
+          border-bottom: solid 23px transparent
+          border-left: solid 23px #000
+          position: absolute
+          top: 0
+          right: -46px
+
+nav
+  display: inline-block
+  float: right
+  margin-right: 20px
+
+#menu
+  display: inline
+  float: right
+  margin-right: 30px
+  a
+    display: inline-block
+    padding-top: 10px
+    position: relative
+    font-size: 0.9em
+    color: #CAE3F2
+    padding: 10px
+    text-decoration: none
+    text-align: center
+    &:hover, &:focus
+      background-color: #111
+      text-shadow: 1px 1px 1px #a8d1ff
+
+.icons
+  width: 16px
+  height: 16px
+  display: inline-block
+  text-indent: -30000px
+  margin: 0 5px 0 0
+  -webkit-transition-duration: 0.8s
+  -moz-transition-duration: 0.8s
+  -o-transition-duration: 0.8s
+  transition-duration: 0.8s
+  -webkit-transition-property: -webkit-transform
+  -moz-transition-property: -moz-transform
+  -o-transition-property: -o-transform
+  transition-property: transform
+  overflow: hidden
+  &:hover
+    -webkit-transform: rotate(1440deg)
+    -moz-transform: rotate(1440deg)
+    -o-transform: rotate(1440deg)
+
+#icon a
+  padding-top: 20px
+
+#fb
+  background: url(/simple/images/fb.png) center no-repeat
+
+#twitter
+  background: url(/simple/images/twit.png) center no-repeat
+
+#feed
+  background: url(/simple/images/feed.png) center no-repeat 
+ 
+#content
+  width: 60%
+  padding-top: 1.5em
+  margin-left: 20%
+  margin-right: auto
+  position: relative
+      
+.judul
+  background: url(/simple/images/bingkai.jpg) top center no-repeat
+  border-bottom: 1px solid #def0ef
+  font-size: 80%
+  text-align: center
+  margin: 15px 0px 5px 0px
+  padding: 20px 0px 5px 0px
+      
+article h1
+  background: url(/simple/images/bingkai.jpg) top center no-repeat
+  border-bottom: 1px solid #def0ef
+  font-size: 1.4em
+  text-align: center
+  margin: 15px 0px 5px 0px
+  padding: 20px 0px 5px 0px
+
+footer
+  width: 100%
+  background-color: #000
+  padding-top: 5px
+  padding-bottom: 5px
+  font-size: 70%
+  color: #ddd
+  float: left 
+  height: 17px
+  position: fixed
+  bottom: 0
+  opacity: 0.7
+  
+#disqus_thread
+  #dsq-global-toolbar, .dsq-options, #dsq-comments-title, .dsq-item-trackback, .dsq-comment-footer, #dsq-pagination
+    display: none
+  margin-top: 0.75em
+  position: relative
+
+#dsq-content cite p
+  font-weight: 400 !important
+
+#disqus_thread
+  #dsq-content #dsq-comments .dsq-comment
+    .dsq-full-comment
+      padding: 16px 0 0
+      border-top: solid 1px #ddd
+      .dsq-comment-header
+        background: transparent
+        border: 0
+        font-size: 16px
+        margin-left: 0 0 0 -8px
+        padding: 0 0 0 80px
+        position: relative
+        font-weight: 400
+        font-family: copse, serif
+      .dsq-comment-body
+        font-size: 14px
+        line-height: 1.5em
+        padding: 0 0 0.75em 90px
+        color: #484848
+      .dsq-comment-header .dsq-comment-header-meta-wrapper
+        .dsq-comment-hide-thread, .dsq-comment-header-time
+          display: none
+    padding: 0
+    margin: 0
+  h3
+    display: none !important
+
+.comments .dsq-brlink
+  display: none !important
+
+#disqus_thread
+  .dsq-header-avatar
+    position: absolute
+    top: 0
+    left: 0
+    img
+      width: 60px
+      height: 60px
+  &:after
+    content: ""
+    width: 80px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 5
+    display: block
+
+.dsq-request-user-avatar, .dsq-request-user-info
+  display: none !important
+
+.dsq-comment-text p
+  margin: 0 0 1.5em 0 !important
+  
+@media screen and (min-width: 768px) and (max-width: 900px)
+  body
+    -webkit-text-size-adjust: none
+  #icon
+    display: none !important
+  #menu
+    float: none
+    font-size: 100%
+    margin-left: 7%
+    margin-right: auto
+
+@media screen and (min-width: 400px) and (max-width: 768px)
+  body
+    -webkit-text-size-adjust: none
+  header h1, #icon
+    display: none !important
+  footer p
+    font-size: 70%
+    margin: 0
+  #menu
+    float: none
+    font-size: 100%
+    margin-left: 7%
+    margin-right: auto
+  h1
+    font-size: large
+  h2, h3
+    font-size: medium
+  p
+    font-size: medium
+    margin: 10px
+  img, object, embed
+    max-width: 100%
+  img
+    height: auto
+  pre
+    height: auto
+    width: auto
+
+@media screen and (min-width: 200px) and (max-width: 480px)
+  header h1, #icon, footer
+    display: none !important
+  #menu
+    float: none
+    font-size: 50%
+    margin-left: 5%
+    margin-right: auto
